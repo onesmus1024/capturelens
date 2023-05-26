@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-lastest, windows-2016]
+        os: [ubuntu-lastest]
         node-version: [8.x, 10.x]
     steps:
     - uses: actions/checkout@v3
@@ -46,3 +46,5 @@ jobs:
         npm test
       env:
         CI: true
+
+        
