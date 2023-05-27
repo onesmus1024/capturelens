@@ -5,7 +5,7 @@ import App from './App';
 describe('App', () => {
   test('renders header component', () => {
     render(<App />);
-    const headerElement = screen.getByTestId('header');
+    const headerElement = screen.getByText(/header/i);
     expect(headerElement).toBeInTheDocument();
   });
 
