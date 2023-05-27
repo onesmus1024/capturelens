@@ -9,9 +9,9 @@ describe('App', () => {
     expect(headerElement).toBeInTheDocument();
   });
 
-  test('renders home route', () => {
+  test('renders contact route', () => {
     render(<App />);
-    const homeRoute = screen.getByText(/home/i);
+    const homeRoute = screen.getByText(/contact/i);
     expect(homeRoute).toBeInTheDocument();
   });
 });
